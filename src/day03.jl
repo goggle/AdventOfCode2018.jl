@@ -16,7 +16,7 @@ end
 function part1(claims::Vector{Claim})
     w = maximum(cl.hrange.stop for cl ∈ claims)
     h = maximum(cl.vrange.stop for cl ∈ claims)
-    M = zeros(w, h)
+    M = zeros(UInt8, w, h)
     for cl ∈ claims
         M[cl.hrange, cl.vrange] .+= 1
     end
