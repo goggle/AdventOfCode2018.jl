@@ -34,3 +34,7 @@ end
     @test AdventOfCode2018.Day04.day04(sample) == [240, 4455]
     @test AdventOfCode2018.Day04.day04() == [84834, 53427]
 end
+
+@testset "Day 5" begin
+    @test AdventOfCode2018.Day05.day05() == [10708, 5330]
+end
