@@ -46,3 +46,10 @@ end
 @testset "Day 7" begin
     @test AdventOfCode2018.Day07.day07() == ["LFMNJRTQVZCHIABKPXYEUGWDSO", 1180]
 end
+
+@testset "Day 8" begin
+    sample = "2 3 0 3 10 11 12 1 1 0 1 99 2 1 1 2"
+    @test AdventOfCode2018.Day08.day08() == [138, 66]
+    @test AdventOfCode2018.Day08.day08() == [36566, 30548]
+end
+    
