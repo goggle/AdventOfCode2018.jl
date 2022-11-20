@@ -70,3 +70,7 @@ end
                "█    █  █████   █    █  ██████  ██████  █    █   ████    ███  \n"
     @test AdventOfCode2018.Day10.day10() == [expected, 10558]
 end
+
+@testset "Day 11" begin
+    @test AdventOfCode2018.Day11.day11() == [(21, 76), (234, 108, 16)]
+end
