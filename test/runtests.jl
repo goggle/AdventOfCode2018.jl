@@ -78,3 +78,22 @@ end
 @testset "Day 12" begin
     @test AdventOfCode2018.Day12.day12() == [3915, 4900000001793]
 end
+
+@testset "Day 13" begin
+    sample = "/->-\\        \n" *
+             "|   |  /----\\\n" *
+             "| /-+--+-\\  |\n" *
+             "| | |  | v  |\n" *
+             "\\-+-/  \\-+--/\n" *
+             "  \\------/   \n"
+    sample2 = "/>-<\\  \n" *
+              "|   |  \n" *
+              "| /<+-\\\n" *
+              "| | | v\n" *
+              "\\>+</ |\n" *
+              "  |   ^\n" *
+              "  \\<->/\n"
+    @test AdventOfCode2018.Day13.day13(sample) == [(7, 3), (0, 0)]
+    @test AdventOfCode2018.Day13.day13(sample2) == [(2, 0), (6, 4)]
+    @test AdventOfCode2018.Day13.day13() == [(26, 92), (86, 18)]
+end
