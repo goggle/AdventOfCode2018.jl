@@ -97,3 +97,7 @@ end
     @test AdventOfCode2018.Day13.day13(sample2) == [(2, 0), (6, 4)]
     @test AdventOfCode2018.Day13.day13() == [(26, 92), (86, 18)]
 end
+
+@testset "Day 14" begin
+    @test AdventOfCode2018.Day14.day14() == [9315164154, 20231866]
+end
