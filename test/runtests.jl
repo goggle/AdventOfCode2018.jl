@@ -105,3 +105,18 @@ end
 @testset "Day 16" begin
     @test AdventOfCode2018.Day16.day16() == [531, 649]
 end
+
+@testset "Day 18" begin
+    sample = ".#.#...|#.\n" *
+             ".....#|##|\n" *
+             ".|..|...#.\n" *
+             "..|#.....#\n" *
+             "#.#|||#|#|\n" *
+             "...#.||...\n" *
+             ".|....|...\n" *
+             "||...#|.#|\n" *
+             "|.||||..|.\n" *
+             "...#.|..|.\n"
+    @test AdventOfCode2018.Day18.day18(sample) == [1147, 0]
+    @test AdventOfCode2018.Day18.day18() == [663502, 201341]
+end
