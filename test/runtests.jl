@@ -124,3 +124,12 @@ end
 @testset "Day 19" begin
     @test AdventOfCode2018.Day19.day19() == [1872, 18992592]
 end
+
+@testset "Day 20" begin
+    @test AdventOfCode2018.Day20.day20("^WNE\$") == [3, 0]
+    @test AdventOfCode2018.Day20.day20("^ENWWW(NEEE|SSE(EE|N))\$") == [10, 0]
+    @test AdventOfCode2018.Day20.day20("^ENNWSWW(NEWS|)SSSEEN(WNSE|)EE(SWEN|)NNN\$") == [18, 0]
+    @test AdventOfCode2018.Day20.day20("^ESSWWN(E|NNENN(EESS(WNSE|)SSS|WWWSSSSE(SW|NNNE)))\$") == [23, 0]
+    @test AdventOfCode2018.Day20.day20("^WSSEESWWWNW(S|NENNEEEENN(ESSSSW(NWSW|SSEN)|WSWWN(E|WWS(E|SS))))\$") == [31, 0]
+    @test AdventOfCode2018.Day20.day20() == [3971, 8578]
+end
