@@ -108,7 +108,6 @@ function discover_map!(data::DefaultDict{Tuple{Int,Int},Char}, stack::Vector{Tup
             pop!(stack)
             i += 1
         end
-
     end
 end
 

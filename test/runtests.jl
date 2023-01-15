@@ -133,3 +133,7 @@ end
     @test AdventOfCode2018.Day20.day20("^WSSEESWWWNW(S|NENNEEEENN(ESSSSW(NWSW|SSEN)|WSWWN(E|WWS(E|SS))))\$") == [31, 0]
     @test AdventOfCode2018.Day20.day20() == [3971, 8578]
 end
+
+@testset "Day 23" begin
+    @test AdventOfCode2018.Day23.day23() == [383, 100474026]
+end
