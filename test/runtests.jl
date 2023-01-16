@@ -134,6 +134,13 @@ end
     @test AdventOfCode2018.Day20.day20() == [3971, 8578]
 end
 
+@testset "Day 22" begin
+    sample = "depth: 510\n" *
+             "target: 10,10\n"
+    @test AdventOfCode2018.Day22.day22(sample) == [114, 45]
+    @test AdventOfCode2018.Day22.day22() == [8575, 999]
+end
+
 @testset "Day 23" begin
     @test AdventOfCode2018.Day23.day23() == [383, 100474026]
 end
