@@ -166,6 +166,19 @@ end
     @test AdventOfCode2018.Day16.day16() == [531, 649]
 end
 
+@testset "Day 17" begin
+    sample = "x=495, y=2..7\n" *
+             "y=7, x=495..501\n" *
+             "x=501, y=3..7\n" *
+             "x=498, y=2..4\n" *
+             "x=506, y=1..2\n" *
+             "x=498, y=10..13\n" *
+             "x=504, y=10..13\n" *
+             "y=13, x=498..504\n"
+    @test AdventOfCode2018.Day17.day17(sample) == [57, 29]
+    @test AdventOfCode2018.Day17.day17() == [31949, 26384]
+end
+
 @testset "Day 18" begin
     sample = ".#.#...|#.\n" *
              ".....#|##|\n" *
