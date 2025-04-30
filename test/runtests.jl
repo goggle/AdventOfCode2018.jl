@@ -102,6 +102,66 @@ end
     @test AdventOfCode2018.Day14.day14() == [9315164154, 20231866]
 end
 
+@testset "Day 15" begin
+    sample1 = "#######\n" *   
+              "#.G...#\n" *
+              "#...EG#\n" *
+              "#.#.#G#\n" *
+              "#..G#E#\n" *
+              "#.....#\n" *   
+              "#######\n"
+    @test AdventOfCode2018.Day15.day15(sample1) == [27730, 4988]
+
+    sample2 = "#######\n" *
+              "#G..#E#\n" *
+              "#E#E.E#\n" *
+              "#G.##.#\n" *
+              "#...#E#\n" *
+              "#...E.#\n" *
+              "#######\n"
+    @test AdventOfCode2018.Day15.day15(sample2) == [36334, 29064]
+
+    sample3 = "#######\n" *
+              "#E..EG#\n" *
+              "#.#G.E#\n" *
+              "#E.##E#\n" *
+              "#G..#.#\n" *
+              "#..E#.#\n" *
+              "#######\n"
+    @test AdventOfCode2018.Day15.day15(sample3) == [39514, 31284]
+
+    sample4 = "#######\n" *
+              "#E.G#.#\n" *
+              "#.#G..#\n" *
+              "#G.#.G#\n" *
+              "#G..#.#\n" *
+              "#...E.#\n" *
+              "#######\n"
+    @test AdventOfCode2018.Day15.day15(sample4) == [27755, 3478]
+
+    sample5 = "#######\n" *
+              "#.E...#\n" *
+              "#.#..G#\n" *
+              "#.###.#\n" *
+              "#E#G#G#\n" *
+              "#...#G#\n" *
+              "#######\n"
+    @test AdventOfCode2018.Day15.day15(sample5) == [28944, 6474]
+
+    sample6 = "#########\n" *
+              "#G......#\n" *
+              "#.E.#...#\n" *
+              "#..##..G#\n" *
+              "#...##..#\n" *
+              "#...#...#\n" *
+              "#.G...G.#\n" *
+              "#.....G.#\n" *
+              "#########\n"
+    @test AdventOfCode2018.Day15.day15(sample6) == [18740, 1140]
+
+    @test AdventOfCode2018.Day15.day15() == [239010, 62468]
+end
+
 @testset "Day 16" begin
     @test AdventOfCode2018.Day16.day16() == [531, 649]
 end
