@@ -198,6 +198,10 @@ end
     @test AdventOfCode2018.Day19.day19() == [1872, 18992592]
 end
 
+@testset "Day 21" begin
+    @test AdventOfCode2018.Day21.day21() == [11050031, 11341721]
+end
+
 @testset "Day 20" begin
     @test AdventOfCode2018.Day20.day20("^WNE\$") == [3, 0]
     @test AdventOfCode2018.Day20.day20("^ENWWW(NEEE|SSE(EE|N))\$") == [10, 0]
