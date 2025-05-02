@@ -27,7 +27,7 @@ function solve(nplayers::Int, last::Int)
             insert!(cl, marble)
         else
             scores[player] += marble
-            shift!(cl, 7, :backward)
+            shift!(cl, -7)
             scores[player] += current(cl).data
             delete!(cl)
             forward!(cl)
